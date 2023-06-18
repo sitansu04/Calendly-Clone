@@ -1,0 +1,63 @@
+.swal-button {
+  background-color: #0069ff !important;
+}
+.swal-button:hover {
+  background-color: #1d79bb !important;
+}
+.swal-modal * {
+  filter: saturate(1) !important;
+}
+.swal-title {
+  color: black !important;
+  font-weight: 500 !important;
+}
+.swal-button {
+  border-radius: 2px !important;
+}
+input {
+  padding: 10px;
+}
+#spaceNav {
+  display: none;
+  width: 100%;
+  z-index: 100000;
+  background-color: red;
+  height: 100px;
+}
+#Logout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*todo ----------------------------Small Screen Sizes -------------------------------- */
+@media all and (min-width: 200px) and (max-width: 809px) {
+  #spinner {
+    display: none;
+    /* display: block; */
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    filter: none;
+    backdrop-filter: blur(0.1rem);
+  }
+  #spinner > img {
+    width: 80px !important;
+  }
+  #SuccessPage {
+    height: 80vh !important;
+  }
+  .SuccessPageButtonsHolder h1 {
+    font-size: 21px !important;
+  }
+  #orangegoogle > div > p {
+    font-size: 14px;
+  }
+  #orangegoogle > div > img {
+    width: 100px !important;
+  }
+}

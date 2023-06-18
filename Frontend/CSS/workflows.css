@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+img {
+  cursor: pointer;
+}
+#spinner {
+  display: none;
+  position: fixed;
+  top: 50px;
+  left: 70px;
+  z-index: 999999;
+}
+a {
+  text-decoration: none !important;
+}
+
+body {
+  background-color: rgb(250, 250, 250);
+}
+#container {
+  width: 60%;
+  margin: auto;
+}
+hr {
+  margin-top: 30px;
+}
+
+#stDiv {
+  margin-top: 50px;
+  display: flex;
+}
+#stH1andP {
+  margin-top: 10px;
+}
+#stH1andP > p {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+/* workflows */
+#WorkflowMainDiv {
+  margin-top: 10px;
+}
+#WFhead {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+#workflows {
+  display: flex;
+  gap: 25px;
+}
+#workflows > div {
+  background-color: white;
+  padding: 15px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#workflows > div > p {
+  background-color: white;
+  margin-top: 10px;
+}
+#workflows > div > div {
+  background-color: white;
+  text-align: right;
+  margin-top: 30px;
+}
+.WFbtnDiv > button {
+  background-color: rgb(0, 117, 255);
+  color: white;
+  border-radius: 30px;
+  padding: 10px 15px;
+  font-weight: bolder;
+  border: none;
+}

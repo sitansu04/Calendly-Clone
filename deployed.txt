@@ -1,0 +1,3 @@
+
+Frontend Deploy = "https://mycal-704.netlify.app"
+Backend BaseURL = `https://my-cal-com-backend.vercel.app`

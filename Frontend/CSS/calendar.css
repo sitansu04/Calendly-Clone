@@ -1,0 +1,85 @@
+#Home {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#sticky {
+  padding: 7px !important;
+}
+#topnav {
+  height: 7vh !important;
+}
+#botnav {
+  width: 45% !important;
+}
+#calendar {
+  height: 90vh;
+  width: 80%;
+  padding: 12px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+.CalendarHold {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.fc .fc-daygrid-day-number {
+  font-weight: 600;
+  font-size: 27px !important;
+}
+.fc-daygrid-day-number:hover,
+.fc-daygrid-day-frame:hover .fc-daygrid-day-number {
+  background-color: var(--BlueColor);
+  color: white;
+  cursor: pointer;
+  padding: 2px 10px;
+  border-radius: 27px;
+}
+.fc .fc-daygrid-day-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.fc-h-event {
+  background-color: var(--BlueColor);
+  filter: contrast(1);
+}
+
+.fc .fc-daygrid-day-frame {
+  cursor: pointer !important;
+  position: relative !important;
+}
+.fc .fc-daygrid-day-frame:hover .fc-daygrid-day-number {
+  cursor: pointer;
+  background-color: var(--BlueColor);
+}
+.fc ::-webkit-scrollbar {
+  display: none;
+}
+/*todo ----------------------------Small Screen Sizes -------------------------------- */
+@media all and (min-width: 200px) and (max-width: 809px) {
+  * {
+    font-size: 11px;
+  }
+  .CalendarHold {
+    padding: 0px !important;
+  }
+  #topnav,
+  #sticky {
+    height: auto !important;
+    flex-direction: column !important;
+  }
+  #botnav {
+    width: 100% !important;
+  }
+  #topnav > p:nth-child(1) {
+    font-size: 11px !important;
+  }
+  #calendar {
+    width: 95%;
+  }
+}

@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MyCal.com</title>
+  <link rel="stylesheet" href="CSS/index.css" />
+  <link rel="stylesheet" href="CSS/index2.css" />
+  <link rel="icon" href="./Images/product/icon_mycal.png">
+  <link rel="stylesheet" href="CSS/common.css" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"
+    defer></script>
+
+  <script src="JS/index.js" defer></script>
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+
+<body>
+
+  <!--!--------------------------------------------- Header ----------------------------------------------->
+  <header>
+    <div id="spinner"><img style="width: 70px;" src="Images/spinner.gif" alt=""></div>
+    <script src="JS/Navbar.js" defer></script>
+    <link rel="stylesheet" href="CSS/Navbar.css">
+
+    <div id="Englishtopnav">
+      <div> <img style="width:24px;" src="Images/Icons/globe.svg" alt="">
+        <label for="">English</label>
+        <img style="width:24px;" src="Images/Icons/down.svg" alt="">
+      </div>
+    </div>
+    <nav id="stickynav">
+      <div id="NavBrand"><a href="index.html"><img style="width:200px;" src="Images/Icons/MyCalBrand.png" alt=""></a>
+      </div>
+      <div id="NavlinkParent">
+        <div data-navclose><a class="nav-link" href="products.html">Products</a></div>
+        <div data-navclose><a class="nav-link" href="products.html">Solutions</a></div>
+        <div data-navclose><a class="nav-link" href="products.html">Teams & Companies</a></div>
+        <div data-navclose><a class="nav-link" href="products.html">Pricing</a></div>
+        <div data-navclose><a class="nav-link" href="products.html">Resources</a></div>
+      </div>
+      <div id="MyAccBtn" class="flex">
+        <button id="MyAccountBtn" class="BlueWhiteBtn">My Account</button>
+        <button id="navclickbtn" data-navclose>
+          <svg data-navclose xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 96 960 960" width="30">
+            <path data-navclose d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" />
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+  <!--*--------------------------------------------- Main Body ----------------------------------------------->
+  <main>
+    <section id="LandingPage">
+      <div class="LandingParent" data-aos="fade-in">
+        <div id="LandLeft" data-aos="fade-out">
+          <h1 class="Introduction">
+            Easy <br /><label>scheduling</label>
+            <label style="color: rgb(0, 107, 255)">ahead</label>
+          </h1>
+          <p class="lpara1">
+            Calendly is your scheduling automation platform for eliminating
+            the back-and-forth emails for finding the perfect time — and so
+            much more.
+          </p>
+          <br />
+          <div class="flex">
+            <button class="landingbuttons googleRedirect">
+              <img width="25px"  src="Images/Icons/googlesvg.svg" alt="" />
+              Sign up free with Google
+            </button>
+            <button class="landingbuttons googleRedirect">
+              <img width="25px"  src="Images/Icons/microsoft.svg" alt="" />
+              Sign up free with Microsoft
+            </button>
+          </div>
+          <hr />
+
+          <label for="" style="color: rgb(0, 107, 255)">Sign up free with email.</label>
+          <label for=""> No credit card required</label>
+        </div>
+        <div class="LandRight" data-aos="fade-out">
+          <img id="landingimage" src="Images/Home/Homepage-Hero-new.webp" alt="" />
+        </div>
+      </div>
+      <div class="LandCompanies">
+        <h1 data-aos="fade-up">
+          Simplified scheduling for more than
+          <label style="color: rgb(0, 107, 255)">10,000,000</label><br> users
+          worldwide
+        </h1>
+        <div class="LandCompaniesimgs">
+          <img src="Images/Home/ebayX.svg" alt="" data-aos="fade-in" />
+          <img src="Images/Home/ZenefitsX.svg" alt="" data-aos="fade-in" />
+          <img src="Images/Home/compassX.svg" alt="" data-aos="fade-in" />
+          <img src="Images/Home/twiliox.svg" alt="" data-aos="fade-in" />
+          <img src="Images/Home/dropboxX.svg" alt="" data-aos="fade-in" />
+        </div>
+      </div>
+    </section>
+    <!--todo--------------------------------------------- <Design For trams> ----------------------------------------------->
+    <section id="DesignForTeams_Section" class="sectionsTwo">
+      <h1 class="SecitonHeadOne">
+        Designed for teams who conduct meetings at scale
+      </h1>
+      <div id="TabSelectors">
+        <div id="salestab" class="activeDesign">
+          <img
+            src="https://images.ctfassets.net/k0lk9kiuza3o/3OwgyUlrXHtg0IAggLiBxM/585e2deb0c6a37def311948d533cec83/Sales_Solution_Icon.svg"
+            alt="" />
+          <p>Sales</p>
+        </div>
+        <div id="marketingtab">
+          <img
+            src="https://images.ctfassets.net/k0lk9kiuza3o/2jwWiBSI8ybK6co0IkpDyl/6f12dc2800f917daaf6208b9c50dda2a/Marketing.svg"
+            alt="" />
+          <p>Marketing</p>
+        </div>
+        <div id="customertab">
+          <img
+            src="https://images.ctfassets.net/k0lk9kiuza3o/6KO0vF2ofioxGmQJGQBdT1/17aa4dde7a8f9b24e477e936471cf9ae/Theme_Light_-_2023-01-30T160450.970.svg"
+            alt="" />
+          <p>Customer Success</p>
+        </div>
+        <div id="recrutingtab">
+          <img
+            src="https://images.ctfassets.net/k0lk9kiuza3o/1ZtP4RsSOCElDrcJqAI9lZ/94cfe77e9d3674629eb872b821a97fd4/Group__3_.svg"
+            alt="" />
+          <p>Recruiting</p>
+        </div>
+        <div id="infotab">
+          <img
+            src="https://images.ctfassets.net/k0lk9kiuza3o/4GBMikmwmpyt1nyj9axwHe/7596905d688d842e07d36956a92bb57f/Happy-Laptop-Icon__1_.svg"
+            alt="" />
+          <p>Information Technology</p>
+        </div>
+        <div id="edutab">
+          <img
+            src="https://images.ctfassets.net/k0lk9kiuza3o/2ISl5s3a5RId9XpeuTJBxV/0583fa2f7b03759f83ffdd7dd9adce9b/Theme_Light_-_2023-01-30T155502.651.svg"
+            alt="" />
+          <p>Education</p>
+        </div>
+      </div>
+      <div id="DesignTeamTabs">
+        <div id="salestabbox" class="DesignTeamTabsChild">
+          <div class="Designtabparas" data-aos="fade-right">
+            <div class="flex">
+              <div class="designsmolicons">
+                <img
+                  src="https://images.ctfassets.net/k0lk9kiuza3o/6XYk0FVB5XgZq1VNWa3F6g/69c7c06005970e3afa4d837ff13da76a/Theme_Light__12_.svg"
+                  alt="" />
+              </div>
+              <div>
+                <h3>Drive more revenue</h3>
+                <p>
+                  Book high-value meetings in seconds and turn scheduling into
+                  a competitive advantage.
+                </p>
+              </div>
+            </div>
+            <br />
+            <div class="flex">
+              <div class="designsmolicons">
+                <img
+                  src="https://images.ctfassets.net/k0lk9kiuza3o/7ca46xMCYZeCwUBwo8chR5/a5348e9e292420609388895feeca6808/Theme_Light__33_.svg"
+                  alt="" />
+              </div>
+              <div>
+                <h3>Speed up your sales cycle</h3>
+                <p>
+                  Keep your deal momentum high and remove scheduling friction
+                  at every stage of your sales cycle.
+                </p>
+              </div>
+            </div>
+
+            <br />
+            <div class="flex">
+              <div class="designsmolicons">
+                <img
+                  src="https://images.ctfassets.net/k0lk9kiuza3o/4hDDf32o6Lz7q8SKL4jpia/762c7012671de1694da8c6a4414ec4c9/Theme_Light__8_.svg"
+                  alt="" />
+              </div>
+              <div>
+                <h3>Close more deals</h3>
+                <p>
+                  Customize reminder and follow-up workflows to move deals
+                  along, integrate with sales tools, and remove logistical
+                  tasks to focus on selling.
+                </p>
+              </div>
+            </div>
+            <br />
+            <a href="" id="LearnMore">Learn More > </a>
+          </div>
+          <div class="Designtabimgs" data-aos="fade-left">
+            <img width="100%"
+              src="https://images.ctfassets.net/k0lk9kiuza3o/2rG4thXSvKkcjfy96bmbWa/1d7cd9d16cc09fffcdea73cb6718479f/Calendly-Sales-Small-new.png?w=1140&h=955&q=85&fm=webp"
+              alt="" />
+          </div>
+        </div>
+        <div id="marketingtabbox" class="DesignTeamTabsChild">
+          <div class="Designtabparas">
+            <div class="flex">
+              <div class="designsmolicons">
+                <img
+                  src="https://images.ctfassets.net/k0lk9kiuza3o/6XYk0FVB5XgZq1VNWa3F6g/69c7c06005970e3afa4d837ff13da76a/Theme_Light__12_.svg"
+                  alt="" />
+              </div>
+              <div>
+                <h3>Drive more pipeline</h3>
+                <p>Turn marketing leads into booked meetings, faster.</p>
+              </div>
+            </div>
+            <br />
+            <div class="flex">
+              <div class="designsmolicons">
+                <img
+                  src="https://images.ctfassets.net/k0lk9kiuza3o/7ca46xMCYZeCwUBwo8chR5/a5348e9e292420609388895feeca6808/Theme_Light__33_.svg"
+                  alt="" />
+              </div>
+              <div>
+                <h3>Improve lead response times</h3>
+                <p>
+                  Gain a competitive advantage when you qualify, route, and
+                  book leads instantly.
+                </p>
+              </div>
+            </div>
+
+            <br />
+            <div class="flex">
+              <div class="designsmolicons">
+                <img
+                  src="https://images.ctfassets.net/k0lk9kiuza3o/4hDDf32o6Lz7q8SKL4jpia/762c7012671de1694da8c6a4414ec4c9/Theme_Light__8_.svg"
+                  alt="" />
+              </div>
+              <div>
+                <h3>Boost conversion rates</h3>
+                <p>
+                  Reduce friction in the sales funnel and close more deals.
+                </p>
+              </div>
+            </div>
+            <br />
+            <a href="" id="LearnMore">Learn More > </a>
+          </div>
+          <div class="Designtabimgs">
+            <img width="100%"
+              src="https://images.ctfassets.net/k0lk9kiuza3o/6MaOVZrhlUGMwh5xszyWl8/2aaeec70d4e44490f150e28ea21d3165/Calendly-Demand-Gen-Small.png?w=1141&h=937&q=85&fm=webp"
+              alt="" />
+          </div>
+        </div>
+        <div id="customertabbox" class="DesignTeamTabsChild">
+          <div class="Designtabparas">
+            <div class="flex">
+              <div class="designsmolicons">
+                <img
+                  src="https://images.ctfassets.net/k0lk9kiuza3o/6XYk0FVB5XgZq1VNWa3F6g/69c7c06005970e3afa4d837ff13da76a/Theme_Light__12_.svg"
+                  alt="" />
+              </div>
+              <div>
+                <h3>Drive more retention</h3>
+                <p>
+                  Bring all of your experts together and connect with
+                  customers at every stage of their journey to build
+                  long-lasting partnerships.
+                </p>
+              </div>
+            </div>
+            <br />
+            <div class="flex">
+              <div class="designsmolicons">
+                <img
+                  src="https://images.ctfassets.net/k0lk9kiuza3o/7ca46xMCYZeCwUBwo8chR5/a5348e9e292420609388895feeca6808/Theme_Light__33_.svg"
+                  alt="" />
+              </div>
+              <div>
+                <h3>Speed up your response times</h3>
+                <p>
+                  Quickly book time to solve customers’ needs and help them
+                  self-serve to support their goals.
+                </p>
+              </div>
+            </div>
+
+            <br />
+            <div class="flex">
+              <div class="designsmolicons">
+                <img
+                  src="https://images.ctfassets.net/k0lk9kiuza3o/4hDDf32o6Lz7q8SKL4jpia/762c7012671de1694da8c6a4414ec4c9/Theme_Light__8_.svg"
+                  alt="" />
+              </div>
+              <div>
+                <h3>Improve NPS and customer health</h3>
+                <p>
+                  Change the way you schedule meetings to increase customer
+                  satisfaction and keep engagement high with reminder and
+                  follow-up workflows.
+                </p>
+              </div>
+            </div>
+            <br />
+            <a href="" id="LearnMore">Learn More > </a>
+          </div>
+          <div class="Designtabimgs">
+            <img width="100%"
+              src="https://images.ctfassets.net/k0lk9kiuza3o/47xznwNRRuHE6gx1VSbhee/2f9ad09c15c55a4a252239f2e915c459/Calendly-Customer-Success.png?w=1141&h=939&q=85&fm=webp"
+              alt="" />
+          </div>
+        </div>
+        <div id="recrutingtabbox" class="DesignTeamTabsChild">
+          <div class="Designtabparas">
+            <div class="flex">
+              <div class="designsmolicons">
+                <img
+                  src="https://images.ctfassets.net/k0lk9kiuza3o/6XYk0FVB5XgZq1VNWa3F6g/69c7c06005970e3afa4d837ff13da76a/Theme_Light__12_.svg"
+                  alt="" />
+              </div>
+              <div>
+                <h3>Hire more efficiently</h3>
+                <p>
+                  Spend less time wrangling calendars and more time meeting
+                  candidates.
+                </p>
+              </div>
+            </div>
+            <br />
+            <div class="flex">
+              <div class="designsmolicons">
+                <img
+                  src="https://images.ctfassets.net/k0lk9kiuza3o/7ca46xMCYZeCwUBwo8chR5/a5348e9e292420609388895feeca6808/Theme_Light__33_.svg"
+                  alt="" />
+              </div>
+              <div>
+                <h3>Speed up your recruiting cycle</h3>
+                <p>Book interviews in seconds and reduce time-to-fill.</p>
+              </div>
+            </div>
+
+            <br />
+            <div class="flex">
+              <div class="designsmolicons">
+                <img
+                  src="https://images.ctfassets.net/k0lk9kiuza3o/4hDDf32o6Lz7q8SKL4jpia/762c7012671de1694da8c6a4414ec4c9/Theme_Light__8_.svg"
+                  alt="" />
+              </div>
+              <div>
+                <h3>Improve the candidate experience</h3>
+                <p>
+                  Eliminate friction and make your recruiting process a
+                  competitive advantage.
+                </p>
+              </div>
+            </div>
+            <br />
+            <a href="" id="LearnMore">Learn More > </a>
+          </div>
+          <div class="Designtabimgs">
+            <img width="100%"
+              src="https://images.ctfassets.net/k0lk9kiuza3o/1kDKK7sXKlgYglms0bWvmh/832a633866ff496a90261876f026d5fd/Calendly-Recruiting-Small.png?w=1140&h=930&q=85&fm=webp"
+              alt="" />
+          </div>
+        </div>
+        <div id="infotabbox" class="DesignTeamTabsChild">
+          <div class="Designtabparas">
+            <div class="flex">
+              <div class="designsmolicons">
+                <img
+                  src="https://images.ctfassets.net/k0lk9kiuza3o/6XYk0FVB5XgZq1VNWa3F6g/69c7c06005970e3afa4d837ff13da76a/Theme_Light__12_.svg"
+                  alt="" />
+              </div>
+              <div>
+                <h3>Drive adoption and ROI across teams</h3>
+                <p>
+                  Partner with our team to onboard, drive adoption, and
+                  identify success metrics to achieve greater value, faster.
+                </p>
+              </div>
+            </div>
+            <br />
+            <div class="flex">
+              <div class="designsmolicons">
+                <img
+                  src="https://images.ctfassets.net/k0lk9kiuza3o/7ca46xMCYZeCwUBwo8chR5/a5348e9e292420609388895feeca6808/Theme_Light__33_.svg"
+                  alt="" />
+              </div>
+              <div>
+                <h3>
+                  Maintain enterprise-grade security with scheduling
+                  automation
+                </h3>
+                <p>
+                  Stay aligned with your security requirements and reduce risk
+                  across the org.
+                </p>
+              </div>
+            </div>
+
+            <br />
+            <div class="flex">
+              <div class="designsmolicons">
+                <img
+                  src="https://images.ctfassets.net/k0lk9kiuza3o/4hDDf32o6Lz7q8SKL4jpia/762c7012671de1694da8c6a4414ec4c9/Theme_Light__8_.svg"
+                  alt="" />
+              </div>
+              <div>
+                <h3>Implement and govern at ease</h3>
+                <p>
+                  Eliminate the manual processes of implementing, managing
+                  user access and permissions on the platform.
+                </p>
+              </div>
+            </div>
+            <br />
+            <a href="" id="LearnMore">Learn More > </a>
+          </div>
+          <div class="Designtabimgs">
+            <img width="100%"
+              src="https://images.ctfassets.net/k0lk9kiuza3o/2Vw1fqn2KMdFMULRX84jgx/bcee83879a5d189867d98689b0088d0d/Calendly-IT_Small__3.png?w=2282&h=1876&q=85&fm=webp"
+              alt="" />
+          </div>
+        </div>
+        <div id="edutabbox" class="DesignTeamTabsChild">
+          <div class="Designtabparas">
+            <div class="flex">
+              <div class="designsmolicons">
+                <img
+                  src="https://images.ctfassets.net/k0lk9kiuza3o/6XYk0FVB5XgZq1VNWa3F6g/69c7c06005970e3afa4d837ff13da76a/Theme_Light__12_.svg"
+                  alt="" />
+              </div>
+              <div>
+                <h3>
+                  Drive more valuable connections with automated scheduling
+                </h3>
+                <p>
+                  Spend more quality time supporting students, whether you’re
+                  advising, tutoring, career planning, or counseling.
+                </p>
+              </div>
+            </div>
+            <br />
+            <div class="flex">
+              <div class="designsmolicons">
+                <img
+                  src="https://images.ctfassets.net/k0lk9kiuza3o/7ca46xMCYZeCwUBwo8chR5/a5348e9e292420609388895feeca6808/Theme_Light__33_.svg"
+                  alt="" />
+              </div>
+              <div>
+                <h3>Increase communication and foster coordination</h3>
+                <p>
+                  Make your schedule more accessible to students and
+                  prospects, allowing them to book time when they need it
+                  most.
+                </p>
+              </div>
+            </div>
+
+            <br />
+            <div class="flex">
+              <div class="designsmolicons">
+                <img
+                  src="https://images.ctfassets.net/k0lk9kiuza3o/4hDDf32o6Lz7q8SKL4jpia/762c7012671de1694da8c6a4414ec4c9/Theme_Light__8_.svg"
+                  alt="" />
+              </div>
+              <div>
+                <h3>Deliver a better educational experience</h3>
+                <p>
+                  Focus on what matters most: supporting and connecting with
+                  your students, so they can succeed.
+                </p>
+              </div>
+            </div>
+            <br />
+            <a href="" id="LearnMore">Learn More > </a>
+          </div>
+          <div class="Designtabimgs">
+            <img width="100%"
+              src="https://images.ctfassets.net/k0lk9kiuza3o/1nFkpdx4ok8zrMu4ZCkIxV/2d9761a58b2d846458fa27797dc2ecee/Calendly-Education.png?w=1140&h=932&q=85&fm=webp"
+              alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--todo--------------------------------------------- <WeMakeSchedule> ----------------------------------------------->
+    <section id="WeMakeScheduling_Section" class="sectionsTwo" data-aos="fade-up">
+      <h1 class="SecitonHeadOne">
+        We make scheduling for you easier than ever
+      </h1>
+      <div class="WeMakeSchedule_Parent">
+        <div class="WeMakeSchedule_Chiled" data-aos="fade-left">
+          <div>
+            <h1 id="MakeYourItHead">
+              Share your MyCal <br />
+              availability with others
+            </h1>
+
+            <p>
+              Grow your business with scheduling automation. Simply email,
+              text, or add your Calendly availability to your website – and
+              watch prospects and recruits book high-value meetings with you.
+            </p>
+            <br />
+            <a href="" id="LearnMore">Learn More > </a>
+          </div>
+          <div>
+            <img width="100%"
+              src="https://images.ctfassets.net/k0lk9kiuza3o/7mkknkKmPsEGwaB5mdt60t/a0010378ce3a001a11e9040372a91362/Calendly-Email-Embed-Recruiting.png?w=1140&h=931&q=85&fm=webp"
+              alt="" />
+          </div>
+        </div>
+        <div class="WeMakeSchedule_Chiled" data-aos="fade-right">
+          <div>
+            <img width="100%"
+              src="https://images.ctfassets.net/k0lk9kiuza3o/6XqS7MbsZB4a08zAUxOHde/033649d82a01b51bbc080b037aac0206/Calendly-Round-Robin.png?w=1140&h=931&q=85&fm=webp"
+              alt="" />
+          </div>
+          <div>
+            <h1 id="MakeYourItHead">Schedule as a team</h1>
+
+            <p>
+              MyCal adapts to both you and your team's scheduling preferences.
+              Co-host a client call with a colleague, email reminders and
+              follow-ups, and integrate everything with your preferred
+              software tools.
+            </p>
+            <br />
+            <a href="" id="LearnMore">Learn More > </a>
+          </div>
+        </div>
+        <div class="WeMakeSchedule_Chiled" data-aos="fade-left">
+          <div>
+            <h1 id="MakeYourItHead">Hit Your Number</h1>
+
+            <p>
+              High-value meetings are the lifeblood of your business. Increase
+              revenue, retain customers, and land recruits with the #1
+              scheduling automation platform.
+            </p>
+            <br />
+            <a href="" id="LearnMore">Learn More > </a>
+          </div>
+          <div>
+            <img width="100%"
+              src="https://images.ctfassets.net/k0lk9kiuza3o/ImJSAqUd3vtZlQiEiyWXH/a6a23c23b5d4fdb5173b5a43c48de78a/Calendly-Graph.png?w=1140&h=930&q=85&fm=webp"
+              alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--todo--------------------------------------------- <OneProfile> ----------------------------------------------->
+    <section id="OneProfile" class="sectionsTwo">
+      <div>
+        <div data-aos="fade-right">
+          <img width="100%"
+            src="https://images.ctfassets.net/k0lk9kiuza3o/1P9zuAkIFq322HPnDsTr0r/80fc18ea040a5b39e746bfdee015e9a0/Calendly-testimonial-Vonage__1_.png?w=1140&h=931&q=85&fm=webp"
+            alt="" />
+        </div>
+        <div class="OneProfileRighet" data-aos="fade-left">
+          <h1 id="oneprofileH1">
+            “Calendly has increased meetings with customers by 216% for our
+            Vonage team.”
+          </h1>
+          <br />
+          <img
+            src="https://images.ctfassets.net/k0lk9kiuza3o/2H4GbF1jpOyD7cNMW0Dv82/85a232765d647c41403ca471fe76589d/VonageLogo.svg"
+            alt="" />
+          <br /><br />
+          <h3 id="oneprofileH3">Chris Williams</h3>
+          <p>Head of Customer Success UK/EMEA</p>
+          <br />
+          <a href="" id="Readmore">Read More > </a>
+        </div>
+      </div>
+    </section>
+    <!--todo--------------------------------------------- <SchedulingAutomation> ----------------------------------------------->
+    <section id="SchedulingAutomation_Section" class="sectionTwo" data-aos="fade-up">
+      <h1 class="SectionHeadTwo">
+        Scheduling automation happens before and after meetings
+      </h1>
+      <div class="SchedulingParent" data-aos="fade-right">
+        <div class="SchedulingLeft">
+          <img id="ScAuImg" src="Images/Home/scl1.jpg" alt="" />
+        </div>
+        <div class="SchedulingRight" data-aos="fade-left">
+          <div>
+            <h1 id="Schlimg1" class="SchedulingTexts">
+              Let people schedule meetings on your website
+            </h1>
+          </div>
+          <div>
+            <h1 id="Schlimg2" class="SchedulingTexts">
+              Screen people before they can book with you
+            </h1>
+          </div>
+          <div>
+            <h1 id="Schlimg3" class="SchedulingTexts">
+              Make people reconfirm meetings with you
+            </h1>
+          </div>
+          <div>
+            <h1 id="Schlimg4" class="SchedulingTexts">
+              Automatically move a deal along with helpful content
+            </h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--todo--------------------------------------------- <Integration Extension> ---------------------------------------------->
+    <section id="Integration_Section" class="sectionsTwo" data-aos="fade-up">
+      <div>
+        <div>
+          <h1 id="MakeYourItHead">
+            Integrations & <br />
+            Extensions
+          </h1>
+
+          <p>
+            Boost productivity with integrations that fold right <br />
+            into your workflow.
+          </p>
+          <br />
+          <button class="BlueWhiteBtn">Explore Integrations</button>
+        </div>
+        <div>
+          <img width="100%"
+            src=" https://images.ctfassets.net/k0lk9kiuza3o/7pnp3ZIJHHNMJEYXSCktL/b04ce26084a30501984a14a2058efa36/Integrations-Calendly__1_.png?w=1582&h=1283&q=85&fm=webp"
+            alt="" />
+        </div>
+      </div>
+    </section>
+    <!--todo--------------------------------------------- <Make your IT Extension> ----------------------------------------------->
+    <section id="MakeYourIT_Section" class="sectionsTwo" data-aos="fade-up">
+      <div class="MakeYourItImage">
+        <img width="100%"
+          src="https://images.ctfassets.net/k0lk9kiuza3o/2L9MC4GQzvWk2uSZLbZO29/4d086ff64790b73fc82a63a49ffcf2b5/Calendly-Secure-IT.png?w=1140&h=930&q=85&fm=webp"
+          alt="" />
+      </div>
+      <div class="MakeYourItPara">
+        <h1 id="MakeYourItHead">Make your IT team feel secure and safe</h1>
+        <div class="flex">
+          <div class="designsmolicons">
+            <img
+              src="https://images.ctfassets.net/k0lk9kiuza3o/3xAhNA94ZNW8SgygWcbKAU/3e4c3d91917dded6429a79ad816c854a/Theme_Light__90_.svg"
+              alt="" />
+          </div>
+          <div>
+            <h3>Centralize billing</h3>
+            <p>
+              Hundreds of coworkers use Calendly – bring them all together in
+              one secure, managed account.
+            </p>
+          </div>
+        </div>
+        <br />
+        <div class="flex">
+          <div class="designsmolicons">
+            <img
+              src="https://images.ctfassets.net/k0lk9kiuza3o/3xAhNA94ZNW8SgygWcbKAU/3e4c3d91917dded6429a79ad816c854a/Theme_Light__90_.svg"
+              alt="" />
+          </div>
+          <div>
+            <h3>Standardize how your teams use MyCal</h3>
+            <p>
+              Single-sign-on, SCIM, and more make it easy to onboard/offboard
+              users, mandate passwords, and more.
+            </p>
+          </div>
+        </div>
+
+        <br />
+        <div class="flex">
+          <div class="designsmolicons">
+            <img
+              src="https://images.ctfassets.net/k0lk9kiuza3o/3xAhNA94ZNW8SgygWcbKAU/3e4c3d91917dded6429a79ad816c854a/Theme_Light__90_.svg"
+              alt="" />
+          </div>
+          <div>
+            <h3>Close more deals</h3>
+            <p>
+              Manage how your coworkers create meeting types, send consistent
+              reminders, and adhere to brand standards.
+            </p>
+          </div>
+        </div>
+        <br />
+        <a href="" id="LearnMore">Learn More > </a>
+      </div>
+    </section>
+    <!--todo--------------------------------------------- <Getstarted Extension> ----------------------------------------------->
+    <section id="Getstarted_Section" class="sectionsTwo" data-aos="fade-up">
+      <div>
+        <h1 id="Getstartedhead">Get Started In Seconds</h1>
+        <br />
+        <a href="./loginSignup.html"><button class="BlueWhiteBtn">Signup for free</button></a>
+        <button class="WhiteBlueBtn"><a href="./loginSignup.html">Talk To Sales</a></button>
+      </div>
+    </section>
+  </main>
+  <!--!--------------------------------------------- Footer ----------------------------------------------->
+  <footer>
+    <section id="footer">
+      <div class="footer_section">
+        <div class="footerLeft">
+          <h1 class="footereasy">Easy <br> <label style="color: rgb(0, 107, 255);;"> ahead</label></h1>
+          <p>We take the work out of connecting with others so you can accomplish more.</p>
+          <br><br>
+          <input id="deliveryinp" type="number" placeholder="Enter Pincode"> <button class="BlueWhiteBtn">Check</button>
+          <br><br>
+          <img style="width: 80%;" src="Images/icons/footerlogos.jpg" alt="">
+          <br><br><br>
+          <img style="width: 100%;" src="Images/Icons/googleplay.png" alt="">
+        </div>
+        <div class="footerRight">
+          <div class="footerul">
+            <div> <b>About</b></div>
+            <div> About Calendly</div>
+            <div> Contact Us</div>
+            <div> Newsroom</div>
+            <div> Careers</div>
+            <div> Security</div>
+          </div>
+          <div class="footerul">
+            <div><b>Solutions</b></div>
+            <div> Customer Success</div>
+            <div> Sales</div>
+            <div> Recruiting</div>
+            <div> Information Technology</div>
+            <div> Marketing</div>
+
+          </div>
+          <div class="footerul">
+            <div><b> Popular Features</b></div>
+            <div> Availability</div>
+            <div> Team Scheduling</div>
+            <div> Embed Calendly</div>
+            <div> Workflows</div>
+            <div> Admin Management</div>
+          </div>
+          <div class="footerul">
+            <div><b>Support</b></div>
+            <div>Help Center</div>
+            <div>Video Tutorials</div>
+            <div>Cookie Settings</div>
+          </div>
+          <div class="footerul">
+            <div> <b>Add-Ons</b></div>
+            <div> Download for Chrome</div>
+            <div> Download for Firefox</div>
+          </div>
+          <div class="footerul">
+            <div> <b>Developers</b></div>
+            <div> Developer Tools</div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="footersecond">
+          <label for="">Copyright Calendly 2023</label>
+          <label for="">Privacy / Terms and Conditions</label>
+        </div>
+        <div class="footerthird">
+          <b> Also of interest</b>
+          <label for=""> Free Scheduling Tool for Individuals</label>
+          <label for=""> Scheduling for Small and Large Teams</label>
+          <label for=""> Calendar Connections</label>
+        </div>
+      </div>
+    </section>
+  </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</note>
+
+</html>

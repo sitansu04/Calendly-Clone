@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Bad+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/*? <!----------------------------------------------- < GetstartedSection > -----------------------------------------------> */
+.BlueWhiteBtn {
+  transition: all 0.2s linear 0s;
+  align-items: center;
+  text-align: center;
+  font-weight: 600;
+  min-height: 49px;
+  border: 2px solid transparent;
+  margin: 8px 8px;
+  border-radius: 8px;
+  background-color: rgb(0, 107, 255);
+  padding: 10px 18px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-size: 1.125rem;
+}
+.WhiteBlueBtn {
+  transition: all 0.2s linear 0s;
+  align-items: center;
+  text-align: center;
+  font-weight: 600;
+  min-height: 49px;
+  border: 2px solid rgb(0, 107, 255);
+  margin: 8px 0px;
+  border-radius: 8px;
+  padding: 10px 18px;
+  color: rgb(0, 107, 255);
+  cursor: pointer;
+  font-size: 1.125rem;
+}
+#Getstarted_Section {
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  padding: 100px;
+  background-color: rgb(247, 250, 255);
+}
+#Getstartedhead {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+/*? <!----------------------------------------------- < MakeYourIT_Section > -----------------------------------------------> */
+#MakeYourIT_Section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.MakeYourItImage {
+  width: 50%;
+}
+.MakeYourItPara {
+  padding: 40px;
+  width: 45%;
+}
+#MakeYourItHead {
+  font-size: 2.36875rem;
+  line-height: 1.4;
+  text-align: left;
+  color: rgb(29, 52, 75);
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+.MakeYourItPara h1,
+.MakeYourItPara h3 {
+  font-size: 1.1rem;
+}
+/*? <!----------------------------------------------- < Ingtegratin and Extension > -----------------------------------------------> */
+#Integration_Section {
+  margin: 50px 0px;
+  background: url("https://images.ctfassets.net/k0lk9kiuza3o/1JapOVLauz0YXkuBzr9Y4D/d46e2c2615b3919db32434920fb896f2/Banner_-_Split__3_.png");
+  background-size: cover;
+}
+
+#Integration_Section > div {
+  margin: 20px 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Integration_Section > div > div {
+  width: 50%;
+}
+
+/*? <!----------------------------------------------- < Wemakeschedule > -----------------------------------------------> */
+.WeMakeSchedule_Chiled {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.WeMakeSchedule_Chiled > div:nth-child(1) {
+  width: 50%;
+  padding: 50px;
+}
+
+.WeMakeSchedule_Chiled > div:nth-child(2) {
+  width: 50%;
+  padding: 40px;
+}
+
+/*? <!----------------------------------------------- < Scheduling Automations > -----------------------------------------------> */
+
+#SchedulingAutomation_Section {
+  margin-top: 100px;
+}
+.SchedulingParent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.SchedulingParent > div {
+  padding: 20px;
+}
+.SchedulingTexts {
+  font-size: 1.45rem;
+  margin: 20px;
+  padding: 15px;
+  border-left: 4px solid rgb(0, 107, 255);
+  line-height: 1.4;
+  text-align: left;
+  color: rgb(150, 169, 188);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+.SchedulingTexts:hover {
+  background-color: rgb(233, 237, 240);
+}
+.SchedulingLeft {
+  width: 60%;
+}
+.SchedulingRight {
+  width: 40%;
+}
+.SchedulingLeft > img {
+  width: 100%;
+  min-height: 600px;
+  max-height: 600px;
+}

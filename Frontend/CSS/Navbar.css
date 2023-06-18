@@ -1,0 +1,381 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+img,
+input,
+select,
+button {
+  cursor: pointer;
+}
+a {
+  text-decoration: none !important;
+  padding: 3px;
+}
+
+p {
+  margin: 0px !important;
+}
+/*todo <!----------------------------------------------- < Header Start > -----------------------------------------------> */
+
+.sticky {
+  position: fixed !important;
+  top: 0;
+  box-sizing: border-box;
+  background-color: white;
+  padding: 0px 140px !important;
+  z-index: 10;
+  box-shadow: rgb(0 0 0 / 4%) 0px 4px 4px;
+  width: 100%;
+}
+header {
+  box-shadow: rgb(0 0 0 / 4%) 0px 4px 4px;
+}
+#NavBrand {
+  filter: saturate(2) hue-rotate(20deg);
+}
+nav {
+  position: sticky;
+  top: 0px;
+  padding: 5px 140px !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#NavlinkParent {
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#NavlinkParent > div {
+  margin: 10px;
+  padding: 5px;
+}
+#NavlinkParent > div > a {
+  font-size: 1.2rem;
+  color: black;
+  font-weight: 600;
+}
+#Englishtopnav {
+  padding: 6px 140px !important;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: rgb(247, 250, 255);
+  padding: 5px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+#navclickbtn {
+  display: none;
+  color: white;
+}
+
+/*? <!----------------------------------------------- < Header End > -----------------------------------------------> */
+
+/*todo <!----------------------------------------------- < Footer Start > -----------------------------------------------> */
+.footereasy {
+  font-size: 2.36875rem;
+  line-height: 1.4;
+  font-weight: 700;
+  text-align: left;
+  color: rgb(11, 53, 88);
+  padding-bottom: 16px;
+}
+.footereasy + p {
+  font-size: 1.125rem;
+}
+.footer_section {
+  display: flex;
+  justify-content: space-between;
+}
+.footersecond {
+  display: flex;
+  justify-content: space-between;
+}
+.footersecond > label,
+.footerthird > label,
+.footerthird > b {
+  margin: 7px;
+  color: rgb(71, 103, 136);
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+.footerthird {
+  display: flex;
+  justify-content: left;
+}
+#deliveryinp {
+  padding: 10px 5px;
+  border-radius: 5px;
+  outline: none;
+  border: 0.25px solid grey;
+}
+
+#deliveryinp + button {
+  padding: 7px 10px !important;
+  font-size: 15px;
+  border-radius: 5px;
+}
+.footerLeft {
+  width: 32%;
+}
+#spinner {
+  display: none;
+  position: fixed;
+  top: 50px;
+  left: 70px;
+  z-index: 999999;
+}
+.footerRight {
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.footerRight div {
+  padding: 10px;
+  color: rgb(11, 53, 88);
+  font-size: 1rem;
+}
+.footerRight div:hover {
+  color: rgb(0, 107, 255);
+  cursor: pointer;
+}
+#footer {
+  padding: 20px 100px !important;
+}
+/*? <!----------------------------------------------- < Footer End > -----------------------------------------------> */
+
+/*! <!----------------------------------------------- < Media Queries > -----------------------------------------------> */
+
+/*todo ----------------------------Medium Screen Sizes -------------------------------- */
+@media all and (min-width: 810px) and (max-width: 1079px) {
+  body {
+    overflow-x: hidden;
+  }
+  section,
+  #footer {
+    margin: 10px !important;
+    padding: 10px !important;
+  }
+  nav {
+    padding: 10px 20px !important;
+  }
+  #NavlinkParent > div > a {
+    font-size: 14px;
+  }
+  #MyAccBtn > button.BlueWhiteBtn {
+    padding: 5px 10px;
+    font-size: 1rem;
+  }
+}
+
+@media all and (min-width: 200px) and (max-width: 809px) {
+  body {
+    overflow-x: hidden;
+  }
+  section {
+    padding: 10px !important;
+  }
+  .footersecond > label,
+  .footerthird > label,
+  .footerthird > b {
+    font-size: 7px;
+  }
+  #SuccessPage {
+    height: 78vh;
+  }
+  .Introduction {
+    margin-top: 15px;
+    white-space: normal;
+  }
+  .lpara1 {
+    font-size: 0.9rem;
+  }
+  #navclickbtn {
+    display: block;
+    z-index: 10000;
+  }
+  nav {
+    padding: 0px !important;
+    z-index: 1000;
+  }
+  #TabSelectors > div p {
+    font-size: 15px;
+    text-align: center;
+  }
+  #TabSelectors > div {
+    margin: 0;
+    padding: 0;
+  }
+  .landingbuttons {
+    width: 49%;
+    transition: all 0.2s linear 0s;
+    gap: 8px;
+    font-weight: 600;
+    margin: 5px 3px;
+    padding: 5px 10px;
+    color: rgb(11, 53, 88);
+    cursor: pointer;
+    font-size: 0.625rem;
+  }
+  .SecitonHeadOne {
+    font-size: 1.55rem;
+  }
+  #MyAccountBtn {
+    padding: 7px;
+    font-size: 12px;
+  }
+  #NavBrand img {
+    width: 170px !important;
+  }
+  .Introduction,
+  .Introduction label {
+    font-size: 3.20875rem;
+  }
+  #Englishtopnav {
+    padding: 5px !important;
+  }
+  .LandingParent {
+    flex-direction: column;
+  }
+  #NavlinkParent {
+    position: fixed;
+    background: white;
+    top: 0;
+    left: 100%;
+    width: 100% !important;
+    transition: all 300ms ease;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #NavlinkParent > div {
+    width: 100%;
+    text-align: center;
+  }
+  #NavlinkParent > div:hover {
+    color: rgb(27, 104, 238);
+  }
+  .navtranslate {
+    z-index: 1000;
+    left: 0 !important;
+  }
+  .sticky {
+    top: 0;
+    padding: 0 !important;
+    z-index: 10;
+    width: 100%;
+  }
+
+  .footer_section {
+    margin-bottom: 0px;
+    flex-direction: column;
+    border: 0.25 solid grey;
+  }
+  .footer_section > div {
+    width: 100% !important;
+    padding: 10px !important;
+  }
+  #deliveryinp {
+    padding: 12px;
+    width: 60%;
+  }
+  #NavlinkParent > div > a {
+    font-size: 1.7rem;
+  }
+  #footer {
+    margin: 5px !important;
+    padding: 5px !important;
+  }
+  .footerRight div {
+    padding: 2px;
+    color: rgb(11, 53, 88);
+    font-size: 7px;
+  }
+  .footereasy label {
+    font-size: 2.36875rem;
+  }
+  .WeMakeSchedule_Chiled > div:nth-child(1) {
+    padding: 15px;
+  }
+  .SchedulingTexts {
+    margin: 9px;
+    padding: 10px;
+  }
+  .WeMakeSchedule_Chiled > div:nth-child(2) {
+    padding: 15px;
+  }
+}
+
+/*todo <!----------------------------------------------- < Googlepages > -----------------------------------------------> */
+#orangegoogle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#SuccessPage {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.SuccessPageButtonsHolder {
+  text-align: center;
+}
+.SuccessPageButtonsHolder h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#LetsGoButtonFailed,
+#LetsGoButton {
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  background-color: red;
+}
+#LetsGoButton {
+  background-color: #016bfe;
+}
+#LetsGoButton:hover {
+  background-color: #014dfe;
+}
+#LetsGoButtonFailed:hover {
+  background-color: rgb(250, 89, 60);
+}
+#greentickholder {
+  width: 400px;
+  height: 270px;
+  filter: hue-rotate(91deg) saturate(2);
+  background-image: url("../Images/greentick2.gif");
+  object-position: center;
+  object-fit: cover;
+}
+#crossholder {
+  width: 230px;
+  height: 230px;
+  /* overflow: hidden; */
+  background-image: url("../Images/redcross.webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+}

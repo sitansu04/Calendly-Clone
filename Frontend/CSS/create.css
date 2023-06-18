@@ -1,0 +1,338 @@
+input {
+  padding-left: 12px !important;
+}
+#spinner {
+  display: none;
+  position: fixed;
+  top: 00px;
+  left: 70px;
+  z-index: 999999;
+}
+.swal-text {
+  padding: 12px !important;
+  background-color: azure !important;
+  color: black !important;
+}
+#event_nav {
+  padding: 2rem 0;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 15px 20px -20px;
+}
+
+#event_nav > div {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#event_nav > div > div:nth-child(3) {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#event_nav > div > div:nth-child(1) > p {
+  padding: 0.8rem 1.3rem;
+  border-radius: 50px;
+  border: 1px solid #006bff;
+  cursor: pointer;
+  color: #006bff;
+}
+
+#event_nav > div > div:nth-child(3) > p:nth-child(2) {
+  background-color: #cccccc9d;
+  padding: 0.8rem 1.3rem;
+  border-radius: 50px;
+}
+
+/* ---------------------body-------- */
+#eventformtop {
+  display: flex;
+  justify-content: space-between;
+  height: 10vh;
+  padding: 1rem;
+  align-items: center;
+}
+
+#eventformtop > div:nth-child(1),
+.next_cancel {
+  display: flex;
+  align-items: center;
+}
+#eventformtop > div:nth-child(2) {
+  width: 20%;
+  justify-content: space-evenly;
+}
+#color {
+  background-color: #8247f5;
+  padding: 15px 15px;
+  margin: 14px 5px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.nextbutton {
+  background-color: #006bff;
+  padding: 0.8rem 1.3rem;
+  border-radius: 50px;
+  color: white;
+  cursor: pointer;
+}
+.bot {
+  justify-content: right;
+  column-gap: 3%;
+  margin: 1rem 3rem;
+}
+
+/* --------------------------------------- */
+#event_nav + div {
+  border-radius: 10px;
+  margin-bottom: 50px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  margin-top: 6%;
+}
+#event_form {
+  padding: 1.5rem 3rem;
+  box-sizing: border-box;
+}
+label {
+  font-weight: 600;
+}
+#event_form > div {
+  margin-bottom: 1%;
+}
+#event_form input,
+select {
+  font-size: 17px;
+  font-weight: 300;
+  width: 90%;
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin-top: 0.2rem;
+
+  border: 1px solid #a5a0a09d;
+}
+#event_form option {
+  line-height: 82px !important;
+}
+#starttime,
+#endtime {
+  font-size: 17px;
+  font-weight: 300;
+  width: 90% !important;
+}
+#event_form input::placeholder,
+#event_form select::placeholder {
+  font-size: 17px;
+  font-weight: 300;
+  padding: 0 2%;
+}
+#event_form #event_description {
+  padding-bottom: 10%;
+}
+#event_form #inputtime,
+#event_form #inputdate {
+  width: 95%;
+  display: flex;
+  font-size: 17px;
+  font-weight: 300;
+  justify-content: space-between;
+  margin-bottom: 2%;
+}
+#event_color {
+  width: 40%;
+  font-size: 17px;
+  font-weight: 300;
+}
+.ballsY {
+  font-size: 28px !important;
+}
+#event_form #inputdate > div,
+#event_form #inputtime > div {
+  width: 100%;
+}
+#event_form #inputdate input,
+#event_form select #event_form #inputtime input {
+  width: 90%;
+  border-radius: 5px;
+  padding: 7px 15px !important;
+}
+.cancelbutton {
+  cursor: pointer;
+}
+.ShowDetails {
+  width: 50%;
+  min-height: 200px;
+  padding: 20px;
+}
+
+.FlexEvent {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.ShowTexters {
+  font-weight: 400;
+}
+#event_form {
+  width: 50%;
+}
+.GridShowDetails {
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.GridShowDetails label {
+  overflow-x: hidden;
+}
+.GridShowDetails hr {
+  border: 1px solid #fce8e8;
+}
+#CancelButtonW,
+#NextButtonW {
+  border: none;
+  border-radius: 25px;
+  font-size: 18px;
+  padding: 10px 25px !important;
+  width: auto !important;
+}
+
+#NextButtonW:hover {
+  background-color: #4764f5;
+}
+@media screen and (min-width: 1085px) and (max-width: 1200px) {
+}
+
+@media screen and (min-width: 843px) and (max-width: 1085px) {
+  #event_nav h1 {
+    font-size: 2rem;
+  }
+  #event_nav > div {
+    width: 90%;
+  }
+
+  #event_nav > div > div:nth-child(3) {
+    width: 25%;
+  }
+}
+
+@media screen and (min-width: 646px) and (max-width: 843px) {
+  #event_nav h1 {
+    font-size: 1.4rem;
+  }
+  #event_nav > div {
+    width: 90%;
+  }
+
+  #event_nav > div > div:nth-child(3) {
+    width: 30%;
+  }
+  #event_nav > div > div:nth-child(1) > p {
+    padding: 0.6rem 1.1rem;
+  }
+  #event_nav > div > div:nth-child(3) > p:nth-child(2) {
+    padding: 0.6rem 1.1rem;
+  }
+  #event_nav > div > div:nth-child(3) > p:nth-child(1) {
+    font-size: 14px;
+  }
+  #eventformtop > div:nth-child(2) {
+    width: 30%;
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 646px) {
+  #event_nav h1 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+  #event_nav > div > div:nth-child(3),
+  #event_nav > div > div:nth-child(1) {
+    display: none;
+  }
+  #eventformtop > div:nth-child(2) {
+    width: 30%;
+    justify-content: space-between;
+  }
+  #event_form {
+    padding: 2.5rem 1rem;
+  }
+  #event_form input,
+  select {
+    width: 60%;
+    margin-bottom: 1rem;
+    padding: 7px 20px;
+  }
+  #event_form #event_description {
+    padding-bottom: 20%;
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 577px) {
+  .FlexEvent {
+    flex-direction: column;
+  }
+  #eventformtop {
+    padding: 3px;
+  }
+  #eventformtop > div {
+    width: 50%;
+  }
+  #color {
+    margin: 3px;
+  }
+  .FlexEvent > div {
+    width: 100% !important;
+    margin: 2px !important;
+    padding: 5px !important;
+  }
+  #event_form input,
+  #event_form select,
+  #event_color {
+    padding: 4px 15px;
+    font-size: 11px;
+  }
+  #event_nav > div > div:nth-child(2) > h1 {
+    text-align: center;
+  }
+  #event_nav > div > div:nth-child(3) {
+    justify-content: center !important;
+    align-items: center !important;
+    width: fit-content;
+  }
+  #event_description {
+    padding: 3px !important;
+    height: 40px;
+    font-size: 11px !important;
+  }
+  .GridShowDetails {
+    margin: 0px;
+    padding: 10px;
+  }
+  #event_nav > div {
+    width: 100%;
+  }
+  #event_nav {
+    display: flex !important;
+    flex-direction: column !important;
+    padding: 3px;
+  }
+
+  .next_cancel {
+    width: 90% !important;
+  }
+  .bot {
+    margin: 4px;
+  }
+  .next_cancel #NextButtonW,
+  .next_cancel #CancelButtonW {
+    padding: 7px 22px;
+  }
+}

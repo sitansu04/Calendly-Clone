@@ -1,0 +1,315 @@
+/*? <!----------------------------------------------- < Main Section Styles > -----------------------------------------------> */
+section {
+  margin: 20px 180px;
+}
+body {
+  overflow-x: hidden;
+}
+button {
+  border: none;
+  margin: 0px;
+  padding: 0px;
+  width: auto;
+  background: transparent;
+}
+.SecitonHeadOne {
+  font-size: 3.125rem;
+  font-weight: 600;
+  padding: 20px 140px;
+  text-align: center;
+}
+.SectionHeadTwo {
+  font-size: 2.36875rem;
+  line-height: 1.4;
+  font-weight: 600;
+  padding: 20px 160px;
+  text-align: center;
+}
+/*? <!----------------------------------------------- < FirstView > -----------------------------------------------> */
+.Introduction {
+  font-size: 4.20875rem;
+  line-height: 1.2;
+  white-space: pre-line;
+  text-align: left;
+  color: rgb(11, 53, 88);
+  font-weight: 600;
+  margin-bottom: 32px;
+}
+.LandingParent {
+  width: 100%;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.LandLeft {
+  width: 50%;
+}
+.LandRight {
+  width: 60%;
+}
+
+#landingimage {
+  width: 100%;
+}
+.lpara1 {
+  text-align: left;
+  color: rgb(71, 103, 136);
+  font-size: 1.25rem;
+  line-height: 1.4;
+  font-weight: 400;
+  max-width: 770px;
+}
+.LandCompanies {
+  padding: 40px 5px;
+  text-align: center;
+}
+.LandCompaniesimgs {
+  display: flex;
+  padding: 40px 5px;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+.LandCompanies > h1 {
+  font-size: 1.75rem;
+  padding: 20px 190px;
+}
+.LandCompaniesimgs > img {
+  max-width: 200px;
+  height: 32px;
+}
+.landingbuttons {
+  width: 45%;
+  transition: all 0.2s linear 0s;
+  gap: 8px;
+  font-weight: 600;
+  margin: 8px 10px;
+  border: 2px solid rgb(104, 129, 155);
+  border-radius: 8px;
+  padding: 8px 14px;
+  color: rgb(11, 53, 88);
+  cursor: pointer;
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+}
+
+.landingbuttons:hover {
+  color: rgb(0, 107, 255);
+  border-color: rgb(0, 107, 255);
+  background-color: rgb(252, 250, 255);
+}
+
+/*? <!----------------------------------------------- < Design section > -----------------------------------------------> */
+
+.sectionsTwo {
+  margin-top: 100px;
+}
+#TabSelectors {
+  display: flex;
+  justify-content: center;
+}
+#TabSelectors > div {
+  cursor: pointer;
+  margin: 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 30px;
+
+  filter: brightness(0) saturate(100%) invert(36%) sepia(32%) saturate(581%)
+    hue-rotate(169deg) brightness(98%) contrast(89%) opacity(0.8);
+  border-bottom: 3.5px solid rgb(255, 255, 255);
+}
+
+#TabSelectors > div p {
+  color: rgb(71, 103, 136);
+  font-size: 1.125rem;
+  line-height: 1.6;
+  font-weight: 700;
+}
+#TabSelectors > div img {
+  width: 30px;
+  margin: 5px;
+}
+.activeDesign {
+  border-bottom: 3.5px solid rgb(32, 103, 210) !important;
+  filter: brightness(0) saturate(100%) invert(39%) sepia(100%) saturate(5529%)
+    hue-rotate(209deg) brightness(103%) contrast(105%) !important;
+}
+
+#salestabbox {
+  display: flex;
+}
+#DesignTeamTabs {
+  min-height: 560px !important;
+}
+.DesignTeamTabsChild {
+  width: 100%;
+  padding: 70px;
+
+  display: none;
+  transition: all 1000ms ease-in-out;
+  justify-content: space-around;
+}
+
+.Designtabparas {
+  width: 55%;
+}
+.Designtabparas > div > div > h3 {
+  font-size: 1.35rem;
+  font-weight: 500;
+  color: rgb(11, 53, 88);
+}
+.Designtabparas > div > div > p {
+  color: rgb(106, 102, 102);
+}
+.Designtabimgs {
+  width: 43%;
+}
+.designsmolicons {
+  padding: 13px;
+  padding-top: 0px;
+}
+#LearnMore {
+  font-size: 1.2rem;
+  margin: 20px 48px;
+  font-weight: 600;
+}
+/*? <!----------------------------------------------- < OneProfile > -----------------------------------------------> */
+
+#OneProfile {
+  background-color: rgb(247, 250, 255);
+  width: 100%;
+  margin: 0;
+  padding: 50px 0px;
+}
+#OneProfile > div {
+  margin: 20px 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#OneProfile > div > div {
+  width: 50%;
+}
+#oneprofileH1 {
+  color: rgb(11, 53, 88);
+  font-size: 1.5rem;
+}
+#oneprofileH3 {
+  font-size: 1.5rem;
+}
+.OneProfileRighet {
+  padding: 40px;
+}
+#Readmore {
+  font-size: 1.2rem;
+  margin: 20px 0px;
+  font-weight: 600;
+}
+#spinner {
+  display: none;
+  position: fixed;
+  top: 50px;
+  z-index: 999999;
+  left: 70px;
+}
+/*! <!----------------------------------------------- < Media Queries > -----------------------------------------------> */
+/*  */
+/*todo ----------------------------Small Screen Sizes -------------------------------- */
+@media all and (min-width: 320px) and (max-width: 809px) {
+  * {
+    font-size: 15px;
+  }
+  body,
+  main {
+    overflow-x: hidden;
+  }
+
+  section {
+    margin: 40px 0px !important;
+  }
+  .SecitonHeadOne {
+    font-size: 2.1rem !important;
+    padding: 0px !important;
+  }
+  .SectionHeadTwo {
+    font-size: 2.1rem !important;
+    padding: 0px !important;
+  }
+  #LandingPage {
+    margin: 10px !important;
+  }
+  .LandingParent {
+    flex-direction: column !important;
+  }
+  .LandingParent > div {
+    width: 100% !important;
+  }
+  .LandCompanies > h1 {
+    padding: 0px !important;
+  }
+  .LandCompaniesimgs {
+    display: grid !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px !important;
+  }
+  #TabSelectors {
+    margin: 10px;
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 10px;
+  }
+  .DesignTeamTabsChild {
+    padding: 0px !important;
+    flex-direction: column-reverse;
+  }
+  .DesignTeamTabsChild > div {
+    width: 100% !important;
+  }
+  .WeMakeSchedule_Chiled {
+    flex-direction: column;
+  }
+  .WeMakeSchedule_Chiled > div {
+    width: 100% !important;
+  }
+
+  #OneProfile > div {
+    flex-direction: column !important;
+    width: 100% !important;
+    margin: 0px !important;
+  }
+  #OneProfile > div > div {
+    width: 100% !important;
+  }
+  .SchedulingParent {
+    flex-direction: column-reverse;
+  }
+  .SchedulingParent > div {
+    width: 100% !important;
+  }
+  .SchedulingLeft > img {
+    min-height: auto !important;
+  }
+  #Integration_Section > div {
+    margin: 10px !important;
+    flex-direction: column !important;
+  }
+  #Integration_Section > div > div {
+    width: 100% !important;
+  }
+  #MakeYourIT_Section {
+    flex-direction: column;
+  }
+  .MakeYourItPara {
+    width: 100% !important;
+    padding: 0px !important;
+  }
+}

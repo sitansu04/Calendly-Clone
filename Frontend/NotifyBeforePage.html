@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Create a Workflow</title>
+  <link rel="icon" href="./Images/product/icon_mycal.png" />
+  <link rel="stylesheet" href="CSS/notifyBeforePage.css" />
+  <link rel="stylesheet" href="CSS/Dashboard.css" />
+  <link rel="stylesheet" href="CSS/common.css" />
+</head>
+
+<body>
+  <!--todo--------------------------------------------- <Header> ----------------------------------------------->
+  <div id="spinner">
+    <img style="width: 70px" src="Images/spinner.gif" alt="" />
+  </div>
+  <div id="navbar" class="margins">
+    <div>
+      <a href="Dashboard.html"><img src="Images/Icons/MyCalBrand.png" alt="logo" /></a>
+    </div>
+    <div id="linav">
+      <ul>
+        <li><a href="./Dashboard.html">Home</a></li>
+        <li><a href="calendar.html">My Calendar</a></li>
+        <li><a href="Dashboard.html">Availability</a></li>
+      </ul>
+    </div>
+    <div id="Logout">
+      <div class="namecircle">
+        <img style="width: 22px; filter: invert()" src="Images/logout.svg" alt="" />
+      </div>
+      <a href="Dashboard.html" id="UserShow3">Account</a>
+    </div>
+  </div>
+  <hr style="border: 1px solid rgba(128, 128, 128, 0.158)" />
+  <div id="sticky">
+    <div id="topnav">
+      <p>My Calendly</p>
+      <a href="CreateEvent.html">
+        <p id="Create">+ Create</p>
+      </a>
+    </div>
+    <div id="botnav">
+      <ul>
+        <li><a href="Dashboard.html">Event Types</a></li>
+        <li><a href="Dashboard.html">Schedule Event </a></li>
+        <li><a href="NotifyBeforePage.html">Workflows</a></li>
+        <li><a href="calendar.html">My Calendar</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!--todo---------------------------------------------  ----------------------------------------------->
+  <div id="container">
+    <form action="">
+      <div id="WFnameAndSelectDiv">
+        <div>
+          <label for="">Workflow name</label> <br />
+          <input type="text" value="Email reminder to host" id="name" />
+        </div>
+        <div>
+          <label for=""> Which event types will this apply to?</label><br />
+          <select name="" id="userEvents" required>
+            <option value="">select event</option>
+          </select>
+        </div>
+      </div>
+      <div id="beforetimeDiv">
+        <label for="">When this happens</label><br />
+        <input id="beforeTimeValue" type="number" min="1" max="100000" placeholder="Enter value" required/>
+        <select name="" id="beforeTimeUnit" required>
+          <option value="min">minutes</option>
+          <option value="hour">hour</option>
+        </select>
+        <label > : before event starts</label>
+      </div>
+      <h2 style="margin-top: 30px">Edit: Email to host</h2>
+      <div id="subject">
+        <label for="">Subject</label> <br />
+        <textarea id="subjectText">
+        Reminder: {{event_name}} is at {{event_time}} on {{event_date}}</textarea>
+      </div>
+      <div id="body">
+        <label for="">Body</label> <br />
+        <textarea id="bodyText">
+        Hi {{event_organizer_name}},
+        This is a friendly reminder that your {{event_name}} is at {{event_time}} on {{event_date}}.</textarea>
+      </div>
+      <div id="saveBtnDiv">
+        <input id="saveBtn" type="submit" value="Save" />
+      </div>
+    </form>
+  </div>
+
+  <script src="JS/notifyBeforePage.js"></script>
+  <script>
+    const subjectarea = document.getElementById("subjectText");
+
+    subjectarea.addEventListener("input", function (e) {
+      this.style.height = "auto";
+      this.style.height = this.scrollHeight + "px";
+    });
+    const bodyarea = document.getElementById("bodyText");
+
+    bodyarea.addEventListener("input", function (e) {
+      this.style.height = "auto";
+      this.style.height = this.scrollHeight + "px";
+    });
+  </script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</note>
+</html>

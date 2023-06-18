@@ -1,8 +1,9 @@
 # MyCal.com
 
-# Introducing MyCal.com  (Clone of Calendly.com)
+# Introducing MyCal.com (Clone of Calendly.com)
+
 - Deployed WebSite Link = https://mycal-704.netlify.app
-- Deployed Backend URL  = https://my-cal-com-backend.vercel.app
+- Deployed Backend URL = https://my-cal-com-backend.vercel.app
 
 ![MyCalgt](https://user-images.githubusercontent.com/112753481/221043576-4501abd5-d872-4171-b56a-6e27f607fa9a.png)
 
@@ -46,6 +47,7 @@ They need to go through User Authentication middleware, to perform any interacti
 ---
 
 # Routes :-
+
 - ### Users Routes
 
 | METHOD | ENDPOINT        | WHAT IT DOES                                                                          |
@@ -97,32 +99,36 @@ They need to go through User Authentication middleware, to perform any interacti
 ![signup](https://user-images.githubusercontent.com/112753481/233952458-6a343629-cd5a-4a92-946d-b633a1a5a057.png)
 ![login](https://user-images.githubusercontent.com/112753481/233952469-9e1ad7c0-5963-4653-97b9-2ed389bbf87f.png)
 
-
 ### :large_blue_circle: Oauth Success Pages:-
+
 ![AuthSuccess](https://user-images.githubusercontent.com/112753481/235299486-e16c2439-e71b-4748-a1d6-2f10db3a4258.png)
 
-
-
 ### :large_blue_circle: User Dashboard :-
+
 ![Dashboard](https://user-images.githubusercontent.com/112753481/233952618-399a8042-5bf5-40c2-94e8-c40d9ca440c0.png)
 
 ### :large_blue_circle: Calendar Page :-
+
 - Month View
-![calendar2](https://user-images.githubusercontent.com/112753481/233952783-9916da98-ecbe-4df5-be45-140e3ae235d4.png)
+  ![calendar2](https://user-images.githubusercontent.com/112753481/233952783-9916da98-ecbe-4df5-be45-140e3ae235d4.png)
 - Week View
-![calendarweekview](https://user-images.githubusercontent.com/112753481/233952891-013ac27e-cbad-430c-b3b5-a405dbf01062.png)
+  ![calendarweekview](https://user-images.githubusercontent.com/112753481/233952891-013ac27e-cbad-430c-b3b5-a405dbf01062.png)
 
 ### :large_blue_circle: Create Events Page :-
+
 ![addeventone](https://user-images.githubusercontent.com/112753481/233952962-4da20910-9e4a-427e-988d-05da1e176898.png)
 ![addevent2](https://user-images.githubusercontent.com/112753481/233952975-8fca4b4a-0a5c-494e-a043-48cbf40068dd.png)
 
 ### :large_blue_circle: Create Workflows Page :-
 
 ## ![Workflows](https://user-images.githubusercontent.com/112753481/221465225-a0c9fe15-73c6-4942-9c0d-9bc5f700f2c3.jpg)
+
 ![workfflow](https://user-images.githubusercontent.com/112753481/233953000-b734e66d-fbdc-4932-8a7b-b58dfdb4f68b.png)
 
 ---
-### Team Members of the Project :- 
+
+### Team Members of the Project :-
+
 - Jay Shukla
 - Kunal Mehra
 - Sitansu Mandal
@@ -130,4 +136,5 @@ They need to go through User Authentication middleware, to perform any interacti
 - Punit Juneja
 
 ---
+
 ## Thankyou for your Time :raised_hands: 💝 :-

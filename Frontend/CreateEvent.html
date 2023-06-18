@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Create Event</title>
+  <link rel="icon" href="./Images/product/icon_mycal.png" />
+  <link rel="stylesheet" href="CSS/common.css" />
+  <link rel="stylesheet" href="CSS/Dashboard.css" />
+  <link rel="stylesheet" href="CSS/create.css" />
+</head>
+
+<body>
+  <!--todo--------------------------------------------- <Header> ----------------------------------------------->
+  <header>
+    <div id="spinner">
+      <img style="width: 70px" src="Images/spinner.gif" alt="" />
+    </div>
+    <div id="navbar" class="margins">
+      <div>
+        <a href="index.html"><img src="Images/Icons/MyCalBrand.png" alt="logo" /></a>
+      </div>
+      <div id="linav">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="">Availability</a></li>
+          <li><a href="">Intregations</a></li>
+        </ul>
+      </div>
+      <div id="Logout">
+        <div class="namecircle">
+          <img style="width: 22px; filter: invert()" src="Images/logout.svg" alt="" />
+        </div>
+        <a href="Dashboard.html" id="UserShow3">Account</a>
+      </div>
+    </div>
+
+    <hr style="border: 1px solid rgba(128, 128, 128, 0.158)" />
+
+    <div id="sticky">
+      <div id="topnav">
+        <p>My Calendly</p>
+        <a href="calendar.html">
+          <p id="Create">My Calendar</p>
+        </a>
+      </div>
+      <div id="botnav">
+        <ul>
+          <li><a href="">Event Types</a></li>
+          <li><a href="">Schedule Event </a></li>
+          <li><a href="NotifyBeforePage.html">Workflows</a></li>
+          <li><a href="calendar.html">My Calendar</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <!--todo-------------------------------------------------------------------------------------------->
+  <hr style="border: 1px solid rgba(128, 128, 128, 0.158)" />
+
+  <div id="event_nav">
+    <div>
+      <div>
+        <p>Back</p>
+      </div>
+
+      <div>
+        <h1>Add One-on-One Event Type</h1>
+      </div>
+
+      <div>
+        <p>view live page</p>
+        <p>Share</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="margins" style="border: 2px solid rgb(84, 84, 84)">
+    <div id="eventformtop">
+      <div>
+        <span id="color"></span>
+        <div>
+          <p>What event is this?</p>
+          <p>No location given</p>
+        </div>
+      </div>
+
+      <div class="next_cancel" id="all">
+        <p class="cancelbutton">Cancel</p>
+        <p class="nextbutton">Next</p>
+      </div>
+    </div>
+    <hr />
+    <form id="EventForm">
+      <div class="FlexEvent">
+        <div id="event_form">
+          <div>
+            <label>Event name</label>
+            <br />
+            <input type="text" id="event_name" required />
+          </div>
+          <div>
+            <label>Location</label>
+            <br />
+            <select name="rental-option" id="event_option" required>
+              <option value="">Add a location</option>
+              <option value="In-Person-meeting">In-person meeting</option>
+              <option value="Call">Phone call</option>
+              <option value="Google-meet">Google meet</option>
+              <option value="Zoom-call">Zoom</option>
+            </select>
+          </div>
+          <div>
+            <label>Colour</label>
+            <br />
+            <select name="Color-option" id="event_color" required>
+              <option value="blue">  <label class="ballsY">🔵</label> Blue</option>
+              <option value="red">   <label class="ballsY">🔴</label> Red</option>
+              <option value="green"> <label class="ballsY">🟢</label> Green</option>
+              <option value="orange"><label class="ballsY">🟠</label> Orange</option>
+              <option value="gold">  <label class="ballsY">🟡</label> Gold</option>
+              <option value="purple"><label class="ballsY">🟣</label> Grape</option>
+            </select>
+          </div>
+          <div>
+            <label>Description/Instructions</label> <br />
+            <input type="text" placeholder="Write a summery..." id="event_description" required />
+          </div>
+          <div>
+            <label>Event link </label> <br />
+            <p id="links">calendly.com/mohimabahadur/</p>
+            <input type="text" id="event_link" />
+          </div>
+          <div id="inputtime">
+            <div>
+              <label>Start meeting time</label><br>
+              <input type="time" id="starttime" placeholder="Start meeting time" />
+            </div>
+            <div>
+              <label>End meeting time</label>
+              <input type="time" id="endtime" placeholder="End meeting time" />
+            </div>
+          </div>
+          <div id="inputdate">
+            <div>
+              <label>Start Date</label><br />
+              <input type="date" id="startDate" placeholder="Start Date" />
+            </div>
+            <div>
+              <label>End Date</label><br />
+              <input type="date" id="endDate" placeholder="End Date" />
+            </div>
+          </div>
+          <br />
+        </div>
+
+        <div class="ShowDetails">
+          <h1>Event Details</h1>
+         <div class="GridShowDetails">
+          <b>Name :</b><label id="showname" class="ShowTexters">---</label>
+          <hr><hr>
+          <b>Location :</b><label id="showlocation" class="ShowTexters">---</label>
+          <hr><hr>
+          <b>Color :</b><label id="showcolor" class="ShowTexters">blue</label>
+          <hr><hr>
+          <b>Event Links :</b><label id="showlinks" class="ShowTexters">---</label>
+          <hr><hr>
+          <b>Start Time :</b><label id="showstarttime" class="ShowTexters">---</label>
+          <hr><hr>
+          <b>End Time:</b><label id="showendtime" class="ShowTexters">---</label>
+          <hr><hr>
+          <b>Start Date :</b><label id="showstartdate" class="ShowTexters">---</label>
+          <hr><hr>
+          <b>Created On :</b><label id="showcreatedon" class="ShowTexters">---</label>
+          <hr><hr>
+          <b>End Date :</b><label id="showenddate" class="ShowTexters">---</label>
+          <hr><hr>
+          <b>Description :</b>
+          <p id="showdesp">Introduce the event by providing a short introduction to the name and purpose of the event.</p>
+         </div>
+        </div>
+      </div>
+
+    <hr />
+
+    <div class="next_cancel bot">
+      <button id="CancelButtonW" class="cancelbutton">Cancel</button>
+      <input id="NextButtonW" type="submit" class="nextbutton" value="Next">
+    </div>
+  </div>
+</form>
+  <script src="JS/createEvent.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</note>
+
+</html>
